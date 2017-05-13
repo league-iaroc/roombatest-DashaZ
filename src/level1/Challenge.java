@@ -20,12 +20,12 @@ public class Challenge extends Head {
 		//write code here!
 			
 			driveDirect(500, 500);		//Go straight
-			sleep(2000);			//for 2s
-			//turnLeft(4000);	//Turn left for 4 seconds
+			sleep(2500);			//for 2.5 seconds
+			turnLeft(4300);	//Turn left for 4.3 seconds
 			driveDirect(500, 500);		//Go straight
-			sleep(7000);
-           turnLeft(3000);//Turn left for 3 seconds
-           driveDirect(500,500);//Go straight
+			sleep(7500); // for 7.5 seconds
+           turnLeft(4300);//Turn left for 4.3 seconds
+           driveDirect(500,500); //Go straight
 		}
 
 	//Use methods isBumpedRight() and isBumpedLeft() in loop() method, to detect contact with walls.

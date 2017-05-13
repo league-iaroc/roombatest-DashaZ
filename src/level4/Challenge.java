@@ -19,26 +19,10 @@ public class Challenge extends Head {
 	
 	
 	public void initialize() {
-		driveDirect(500, 500);		
-		sleep(2000);			
-		turnLeft(2000);		
-		driveDirect(500, 500);				
-		sleep(6000);
-       turnRight(3000);       
-       driveDirect(500,500);
-       sleep(3000);
-       turnRight(3000);
-       driveDirect(500,500);
-       sleep(2000);
-       turnLeft(3000);
-       driveDirect(500,500);
-       sleep(2000);
-       turnLeft(2000);
-       driveDirect(500,500);
-       sleep(2000);
-       turnRight(2000);
-       driveDirect(500,500);
-       sleep(3000);
+		driveDirect (10,1000);
+		sleep(1000);
+		
+		//isBumpedLeft();
 	}
 
 //Use methods isBumpedRight() and isBumpedLeft() in loop() method, to detect contact with walls. Left, Left, Right, Straight
@@ -55,16 +39,30 @@ driveDirect(100,10);
 sleep(duration);
 }
 public void loop() {
-	if(isBumpedRight() == true){
-		driveDirect(10, 100);	
-		sleep(3000);
-		driveDirect(500,500);
+	
+	if(isBumpedRight() == true && isBumpedLeft() == false){
+		System.out.println("I bumped right, but not left. ");
+		
 	}
-	if(isBumpedLeft() == true){
-		driveDirect(100, 10);	
-		sleep(3000);
-		driveDirect(500,500);
-	}
+		
+		
+		
+	
+if(isBumpedLeft() == true && isBumpedRight() == false){
+	System.out.println("I bumped left, but not right. ");
+	
+}
+if(isBumpedLeft()== true &&isBumpedRight() == true){
+	System.out.println("I bumped right and left.");
+	driveDirect(-500,-500);
+	sleep(200);
+	driveDirect(700,1000);
+	sleep(200);
+}
+if(isBumpedRight()  == false && isBumpedLeft() == false) {
+	driveDirect (1000,1000);
+	
 
 	}
+}
 }

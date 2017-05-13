@@ -16,14 +16,14 @@ public class Challenge extends Head {
 	}
 
 	public void initialize() {
-		driveDirect(1000, 1000);		
-		sleep(1700);			
-		turnLeft(3400);		
-		driveDirect(1000, 1000);				
-		sleep(2500);
-		turnRight(3500);
-		driveDirect(1000, 1000);				
-		sleep(1000);		
+		driveDirect(1000, 1000);	// go straight	
+		sleep(1700);			// for 1.7 seconds
+		turnLeft(3400);		// turn left for 3.4 seconds
+		driveDirect(1000, 1000);		// go straight		
+		sleep(2500); // for 2.5 seconds
+		turnRight(3500); // turn right for 3.5 seconds
+		driveDirect(1000, 1000);	// go straight			
+		sleep(1000);		// for 1 second
 		
        
        
